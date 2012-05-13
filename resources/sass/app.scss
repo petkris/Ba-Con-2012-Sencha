@@ -1,0 +1,83 @@
+$base-color: #dc140a;
+$list-header-color: #666;
+$list-header-bg-color: #ccc;
+$toolbar-button-color: $base-color;
+$form-bg-color: #fff;
+
+$include-default-icons: false;
+
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+//@include sencha-sheet;
+//@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+//@include sencha-toolbar-forms;
+//@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+//@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+
+@include pictos-iconmask('action');
+@include pictos-iconmask('calendar2');
+@include pictos-iconmask('event_complete');
+@include pictos-iconmask('help');
+@include pictos-iconmask('locate3');
+@include pictos-iconmask('pig');
+@include pictos-iconmask('star');
+@include pictos-iconmask('user_add');
+
+@include sencha-tabbar-ui('gray', #111, 'matte', $base-color);
+@include sencha-toolbar-ui('gray', #ccc);
+
+// Your custom code goes here...
+
+.whitePage {
+	background: #fff;
+}
+
+.htmlPage {
+    background: #fff;
+    color: #333;
+    line-height: 1.7em;
+    font-size: 1.2em;
+
+    p {
+        padding: 0.4em 0;
+    }
+}
+
+.htmlPage table th,
+table.scenarioInfoTable th {
+	vertical-align: top;
+}
+
+.small-title {
+	font-size: 0.8em;
+}
+
+.availables {
+	font-size: 0.8em !important;
+	color: $base-color;
+	padding-left: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.x-list-item-label > div {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.form-field {
+	border: 1px solid #ccc;
+}

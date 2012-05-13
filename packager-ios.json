@@ -1,0 +1,19 @@
+{
+	"applicationName":"BaCon2012",
+	"applicationId":"dk.bacon.BaCon",
+	"versionString":"0.2",
+	"iconName":"resources/icons/Icon-72x72.png",
+	"inputPath":".",
+	"outputPath":"../Ba-Con-2012-build",
+	"configuration":"Debug",
+	"platform":"iOS",
+	"deviceType":"Universal",
+	"certificatePath":"/Users/pkr/.android/pkr.keystore",
+	"certificateAlias":"pkr@pun.dk 2042",
+	"orientations": [
+		"portrait",
+		"landscapeLeft",
+		"landscapeRight",
+		"portraitUpsideDown"
+	]
+}
