@@ -49,7 +49,8 @@ Ext.application({
         'PigSled',
         'Location',
         'About',
-        'Help'
+        'Help',
+        'DeviceInfo'
     ],
 
     controllers: [

@@ -23,7 +23,8 @@ Ext.define("BaCon.view.Main", {
             { xtype: 'pigSled' },
             { xtype: 'location' },
             { xtype: 'about' },
-            { xtype: 'help' }
+            { xtype: 'help' },
+            { xtype: 'deviceInfo' }
         ]
     }
 
