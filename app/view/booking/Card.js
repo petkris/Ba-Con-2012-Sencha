@@ -18,7 +18,6 @@ Ext.define("BaCon.view.booking.Card", {
     			id: 'logoutButton',
     			text: 'Log ud',
     			align: 'right',
-    			hidden: true,
     			hideAnimation: Ext.os.is.Android ? false : {
     				type: 'fadeOut',
     				duration: 200

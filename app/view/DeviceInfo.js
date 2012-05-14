@@ -28,6 +28,7 @@ Ext.define('BaCon.view.DeviceInfo', {
 			'<b>Browser engine:</b> ' + Ext.browser.engineName + '<br/>' +
 			'<b>Device name:</b> ' + Ext.os.name + '<br/>' +
 			'<b>Device type:</b> ' + Ext.os.deviceType + '<br/>' +
+			'<b>Connection:</b> ' + navigator.onLine + '<br/>' +
 			'<b>PhoneGap:</b> ' + (window.PhoneGap?'true':'false') + '<br/>'
 	},
 	
