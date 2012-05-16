@@ -36,7 +36,17 @@ Ext.define("BaCon.view.booking.Card", {
     	    	grouped: true,
     	    	pinHeaders: false
     	    }
-    	]
+    	],
+		
+		listeners: {
+        	show: function() {
+        		console.log('Bookings');
+        	},
+        	
+        	push: function(navigator, view) {
+        		console.log('Bookings - ' + view.config.title);
+        	}
+        }
     }
     
 });

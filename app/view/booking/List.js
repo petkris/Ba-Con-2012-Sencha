@@ -7,6 +7,7 @@ Ext.define('BaCon.view.booking.List', {
 
 		title: 'Bookings',
 		disableSelection: true,
+		plugins: 'pullRefresh',
 		
 		items: [
 			{

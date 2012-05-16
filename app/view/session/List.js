@@ -7,6 +7,28 @@ Ext.define('BaCon.view.session.List', {
 
 		title: 'Program',
 		disableSelection: true,
+		plugins: {
+			xclass: 'BaCon.plugin.PullRefresh',
+			refreshFn: function(refresher) {
+				var store = refresher.getList().getStore();
+				store.clearFilter(false);
+				store.removeAll(false);
+				store.load({
+					callback: function(records, operation, success) {
+						var sessionDayPicker = this.getList().down('sessionDayPicker');
+						var pressedButtons = sessionDayPicker.getPressedButtons();
+						var button;
+						if (pressedButtons.length > 0) {
+							button = pressedButtons[0];
+						} else {
+							button = sessionDayPicker.getCurrentSessionDayButton();
+						}
+						sessionDayPicker.filterStoreByButton('sessionsStore', button);
+					},
+					scope: this
+				});
+			}
+		},
 		
 		items: [
 			{

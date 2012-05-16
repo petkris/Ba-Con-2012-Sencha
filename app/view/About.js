@@ -21,7 +21,13 @@ Ext.define('BaCon.view.About', {
 		        xtype: 'toolbar',
 				title: 'Om Ba-Con 2012'
 		    }
-		]
+		],
+		
+		listeners: {
+        	show: function() {
+        		console.log('About');
+        	}
+        }
 	},
 	
 	initialize: function() {

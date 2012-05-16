@@ -12,8 +12,10 @@ Ext.define('BaCon.controller.Sessions', {
         },
         
         control: {
+        	sessionContainer: {
+        		show: 'onSessionContainerShow'
+        	},
         	sessions: {
-        		initialize: 'onSessionsInitialize',
         		itemtap: 'onSessionTap'
         	},
             sessionDayPicker: {
@@ -22,10 +24,12 @@ Ext.define('BaCon.controller.Sessions', {
         }
     },
 
-    onSessionsInitialize: function() {
-    	var button = this.getSessionDayPicker().getCurrentSessionDayButton();
-    	this.getSessionDayPicker().setPressedButtons(button);
-    	this.getSessionDayPicker().filterStoreByButton('sessionsStore', button);
+    onSessionContainerShow: function() {
+    	if (!Ext.getStore('sessionsStore').isFiltered()) {
+        	var button = this.getSessionDayPicker().getCurrentSessionDayButton();
+        	this.getSessionDayPicker().setPressedButtons(button);
+        	this.getSessionDayPicker().filterStoreByButton('sessionsStore', button);
+    	}
     },
 
     onSessionTap: function(list, index, target, record) {
@@ -40,7 +44,7 @@ Ext.define('BaCon.controller.Sessions', {
         	if (!this.scenario) {
         		this.scenario = Ext.widget('scenario');
         	}
-    		this.getScenarioInfo().config.title = record.get('scenario')['name'];
+    		this.scenario.config.title = record.get('scenario')['name'];
     		this.getScenarioInfo().setRecord(record);
     		this.getSessionContainer().push(this.scenario);    		
     	}

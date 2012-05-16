@@ -7,6 +7,7 @@ Ext.define('BaCon.view.available.List', {
 
 		title: 'Ledige pladser nu',
 		disableSelection: true,
+		plugins: 'pullRefresh',
 		
 		itemTpl: Ext.create('Ext.XTemplate',
 			'<div style="background: url(resources/images/d20.png) top left no-repeat;"><div style="padding-left: 30px;">{scenario_group}</div><div class="availables">{[this.availables(values.optimal_participants, values.participants)]}</div></div>',

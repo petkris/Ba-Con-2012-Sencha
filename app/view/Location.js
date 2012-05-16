@@ -18,7 +18,13 @@ Ext.define('BaCon.view.Location', {
 				xtype: 'toolbar',
 				title: 'Beliggenhed'
 			}
-		]
+		],
+		
+		listeners: {
+        	show: function() {
+        		console.log('Location');
+        	}
+        }
 	},
 
 	initialize: function() {

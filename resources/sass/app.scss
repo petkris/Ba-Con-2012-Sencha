@@ -81,3 +81,11 @@ table.scenarioInfoTable th {
 .form-field {
 	border: 1px solid #ccc;
 }
+
+.x-list-pullrefresh-wrap {
+	@extend .x-list-header;
+}
+
+.x-list-pullrefresh-updated {
+	font-size: 0.8em;
+}

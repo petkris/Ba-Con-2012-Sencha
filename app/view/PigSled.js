@@ -63,7 +63,13 @@ Ext.define('BaCon.view.PigSled', {
 		    	margin: '0 10 10 10',
 		    	tabIndex: 3
 		    }
-		]
+		],
+		
+		listeners: {
+        	show: function() {
+        		console.log('PigSled');
+        	}
+        }
 	}
 	
 });

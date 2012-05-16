@@ -20,7 +20,17 @@ Ext.define("BaCon.view.session.Card", {
     	    	grouped: true,
     	    	pinHeaders: false
     	    }
-    	]
+    	],
+		
+		listeners: {
+        	show: function() {
+        		console.log('Sessions');
+        	},
+        	
+        	push: function(navigator, view) {
+        		console.log('Sessions - ' + view.config.title);
+        	}
+        }
     }
     
 });

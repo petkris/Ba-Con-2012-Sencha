@@ -114,3 +114,23 @@
 2012-05-10 20:03:12 overwrite ../css/app.css 
 2012-05-10 20:30:03 overwrite ../css/app.css 
 2012-05-12 02:07:57 overwrite ../css/app.css 
+2012-05-16 04:31:16 overwrite ../css/app.css 
+2012-05-16 04:32:13 overwrite ../css/app.css 
+2012-05-16 04:32:52 overwrite ../css/app.css 
+2012-05-16 05:43:12     error app.scss (Line 87: Invalid CSS after "	@extend:": expected pseudoclass or pseudoelement, was " .x-list-normal...")
+2012-05-16 05:45:40     error app.scss (Line 87: Invalid CSS after "	@extend:": expected pseudoclass or pseudoelement, was " .x-list-header;")
+2012-05-16 05:47:39     error app.scss (Line 87: Can't extend .x-list-normal .x-list-header: can't extend nested selectors)
+2012-05-16 05:47:58 overwrite ../css/app.css 
+2012-05-16 05:49:45 overwrite ../css/app.css 
+2012-05-16 05:53:08 overwrite ../css/app.css 
+2012-05-16 05:53:28 overwrite ../css/app.css 
+2012-05-16 05:54:11 overwrite ../css/app.css 
+2012-05-16 05:55:42 overwrite ../css/app.css 
+2012-05-16 05:56:52 overwrite ../css/app.css 
+2012-05-16 05:57:54 overwrite ../css/app.css 
+2012-05-16 06:09:54 overwrite ../css/app.css 
+2012-05-16 06:16:09 overwrite ../css/app.css 
+2012-05-16 06:17:59 overwrite ../css/app.css 
+2012-05-16 07:45:23 overwrite ../css/app.css 
+2012-05-16 07:46:48 overwrite ../css/app.css 
+2012-05-16 07:47:23 overwrite ../css/app.css 

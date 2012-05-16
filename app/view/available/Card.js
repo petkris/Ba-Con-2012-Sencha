@@ -20,7 +20,17 @@ Ext.define("BaCon.view.available.Card", {
     	    	grouped: true,
     	    	pinHeaders: false
     	    }
-    	]
+    	],
+		
+		listeners: {
+        	show: function() {
+        		console.log('Available');
+        	},
+        	
+        	push: function(navigator, view) {
+        		console.log('Available - ' + view.config.title);
+        	}
+        }
     }
     
 });

@@ -11,7 +11,8 @@ Ext.application({
     requires: [
         'Ext.device.Notification',
         'BaCon.Config',
-        'BaCon.proxy.BaCon'
+        'BaCon.proxy.BaCon',
+        'BaCon.plugin.PullRefresh'
     ],
 
     models: [
@@ -76,21 +77,22 @@ Ext.application({
     },
     
     launch: function() {
-        Ext.Viewport.setMasked({
-            xtype: 'loadmask',
-            message: 'Indl&aelig;ser...'
-		});
-        
-        Ext.create('BaCon.store.Sessions').load({
-            callback: function(records, operation, success) {
-                Ext.Viewport.setMasked(false);
-                if (success) {
-                    Ext.Viewport.add({ xtype: 'mainPanel' });
-                } else {
-                    Ext.Msg.alert('Load Failed', operation.getError());
-                }
-            },
-            scope: this
-        });
+        Ext.Viewport.add({ xtype: 'mainPanel' });
+//        Ext.Viewport.setMasked({
+//            xtype: 'loadmask',
+//            message: 'Indl&aelig;ser...'
+//		});
+//        
+//        Ext.create('BaCon.store.Sessions').load({
+//            callback: function(records, operation, success) {
+//                Ext.Viewport.setMasked(false);
+//                if (success) {
+//                    Ext.Viewport.add({ xtype: 'mainPanel' });
+//                } else {
+//                    Ext.Msg.alert('Load Failed', operation.getError());
+//                }
+//            },
+//            scope: this
+//        });
     }
 });

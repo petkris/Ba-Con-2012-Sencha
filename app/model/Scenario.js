@@ -12,13 +12,6 @@ Ext.define('BaCon.model.Scenario', {
 		    { name: 'duration', type: 'string' },
 		    { name: 'style', type: 'string' },
 		    { name: 'remarks', type: 'string' }
-		],
-		
-		associations: [
-		    {
-		    	type: 'belongsTo',
-		    	model: 'BaCon.model.Program',
-		    }
 		]
 	}
 });

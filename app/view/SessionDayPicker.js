@@ -12,7 +12,7 @@ Ext.define('BaCon.view.SessionDayPicker', {
 		this.callParent();
 
 		var me = this;
-		Ext.Array.each(BaCon.sessionDays, function(day) {
+		Ext.Array.each(BaCon.Config.sessionDays, function(day) {
 			me.add(day);
 		});
 	},
@@ -21,14 +21,14 @@ Ext.define('BaCon.view.SessionDayPicker', {
 		var store = Ext.getStore(storeId);
 		store.clearFilter(true);
 		store.filterBy(function(entry) {
-			return (entry.get('week_day') == button.config.week_day);
+			return (entry.get('week_day') == button.config.text);
 		});
 	},
 	
     getCurrentSessionDayButton: function() {
     	var now = Ext.Date.clearTime(new Date());
     	var currentIndex = 0;
-    	Ext.Array.each(BaCon.sessionDays, function(day, index) {
+    	Ext.Array.each(BaCon.Config.sessionDays, function(day, index) {
     		var result = true;
     		if (day['date'] >= now) {
     			currentIndex = index;
@@ -44,7 +44,7 @@ Ext.define('BaCon.view.SessionDayPicker', {
     	var minutes = new Date().getMinutes();
     	var currentIndex = 0;
     	var iterationMinutes = 15;
-		Ext.Array.each(BaCon.sessionDays, function(day, index) {
+		Ext.Array.each(BaCon.Config.sessionDays, function(day, index) {
     		var result = true;
     		if (iterationMinutes >= minutes) {
     			currentIndex = index;

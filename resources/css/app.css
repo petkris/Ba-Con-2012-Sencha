@@ -4026,7 +4026,7 @@ audio {
       color: white;
       text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0; }
 
-.x-list-header {
+.x-list-header, .x-list-pullrefresh-wrap {
   position: relative; }
 
 .x-list-header-swap {
@@ -4039,7 +4039,7 @@ audio {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-.x-list-normal .x-list-header {
+.x-list-normal .x-list-header, .x-list-normal .x-list-pullrefresh-wrap {
   background-color: #cccccc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(2%, #dedede), color-stop(100%, #bababa));
   background-image: -webkit-linear-gradient(#ffffff, #dedede 2%, #bababa);
@@ -4078,7 +4078,7 @@ audio {
   width: 1.5em;
   height: 1.5em;
   bottom: 0.5em; }
-.x-list-round .x-list-header {
+.x-list-round .x-list-header, .x-list-round .x-list-pullrefresh-wrap {
   color: #777;
   font-size: 1em;
   font-weight: bold;
@@ -4089,7 +4089,7 @@ audio {
   background-image: linear-gradient(top, #eeeeee, rgba(238, 238, 238, 0.9) 30%, rgba(238, 238, 238, 0.4)); }
 .x-list-round .x-list-container {
   padding: 13px 13px 0 13px; }
-  .x-list-round .x-list-container .x-list-header {
+  .x-list-round .x-list-container .x-list-header, .x-list-round .x-list-container .x-list-pullrefresh-wrap {
     padding-left: 13px;
     background-image: none; }
 .x-list-round.x-list-ungrouped .x-list-item-label, .x-list-round.x-list-grouped .x-list-item-label {
@@ -5242,3 +5242,6 @@ table.scenarioInfoTable th {
 
 .form-field {
   border: 1px solid #ccc; }
+
+.x-list-pullrefresh-updated {
+  font-size: 0.8em; }

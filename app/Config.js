@@ -5,6 +5,13 @@ Ext.define('BaCon.Config', {
 
     dataUrl: 'http://www.ba-con.dk/components/com_signup/views/phone-backend/phone-services/services.php',
 
+    sessionDays: [
+        { text: 'Torsdag', date: new Date(2012,4,17) },
+        { text: 'Fredag', date: new Date(2012,4,18) },
+        { text: 'L&oslash;rdag', date: new Date(2012,4,19) },
+        { text: 'S&oslash;ndag', date: new Date(2012,4,20) },
+    ],
+    
     locations: [
         { text: '' },
         { text: 'Greywall' },

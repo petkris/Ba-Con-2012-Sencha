@@ -21,7 +21,13 @@ Ext.define('BaCon.view.Help', {
 		        xtype: 'toolbar',
 				title: 'Hjælp'
 		    }
-		]
+		],
+		
+		listeners: {
+        	show: function() {
+        		console.log('Help');
+        	}
+        }
 	},
 	
 	initialize: function() {
