@@ -24,11 +24,11 @@ Ext.define("BaCon.view.session.Card", {
 		
 		listeners: {
         	show: function() {
-        		console.log('Sessions');
+//        		console.log('Sessions');
         	},
         	
         	push: function(navigator, view) {
-        		console.log('Sessions - ' + view.config.title);
+//        		console.log('Sessions - ' + view.config.title);
         	}
         }
     }

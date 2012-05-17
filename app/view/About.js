@@ -25,7 +25,7 @@ Ext.define('BaCon.view.About', {
 		
 		listeners: {
         	show: function() {
-        		console.log('About');
+//        		console.log('About');
         	}
         }
 	},

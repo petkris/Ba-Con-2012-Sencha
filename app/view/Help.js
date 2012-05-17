@@ -25,7 +25,7 @@ Ext.define('BaCon.view.Help', {
 		
 		listeners: {
         	show: function() {
-        		console.log('Help');
+//        		console.log('Help');
         	}
         }
 	},

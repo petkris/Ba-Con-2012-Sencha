@@ -24,11 +24,11 @@ Ext.define("BaCon.view.available.Card", {
 		
 		listeners: {
         	show: function() {
-        		console.log('Available');
+//        		console.log('Available');
         	},
         	
         	push: function(navigator, view) {
-        		console.log('Available - ' + view.config.title);
+//        		console.log('Available - ' + view.config.title);
         	}
         }
     }

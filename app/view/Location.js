@@ -22,7 +22,7 @@ Ext.define('BaCon.view.Location', {
 		
 		listeners: {
         	show: function() {
-        		console.log('Location');
+//        		console.log('Location');
         	}
         }
 	},

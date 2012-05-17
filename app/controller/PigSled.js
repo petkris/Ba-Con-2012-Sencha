@@ -23,7 +23,6 @@ Ext.define('BaCon.controller.PigSled', {
     		message: 'SMS oprettet.\nHusk at sende den.',
     	});
     	var smsURI = "sms:" + BaCon.Config.pigSledPhoneNumber + "?body=" + encodeURI(text);
-    	console.log(smsURI);
     	window.location.href = smsURI;
     }
 

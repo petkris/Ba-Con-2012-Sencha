@@ -67,7 +67,7 @@ Ext.define('BaCon.view.PigSled', {
 		
 		listeners: {
         	show: function() {
-        		console.log('PigSled');
+//        		console.log('PigSled');
         	}
         }
 	}

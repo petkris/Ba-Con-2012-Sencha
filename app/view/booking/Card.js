@@ -40,11 +40,11 @@ Ext.define("BaCon.view.booking.Card", {
 		
 		listeners: {
         	show: function() {
-        		console.log('Bookings');
+//        		console.log('Bookings');
         	},
         	
         	push: function(navigator, view) {
-        		console.log('Bookings - ' + view.config.title);
+//        		console.log('Bookings - ' + view.config.title);
         	}
         }
     }

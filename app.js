@@ -77,6 +77,7 @@ Ext.application({
     },
     
     launch: function() {
+    	BaCon.Config.initialize();
         Ext.Viewport.add({ xtype: 'mainPanel' });
 //        Ext.Viewport.setMasked({
 //            xtype: 'loadmask',

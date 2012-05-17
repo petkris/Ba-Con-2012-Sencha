@@ -24,6 +24,17 @@ Ext.define('BaCon.Config', {
         { text: 'Waterdeep' }
     ],
 
-    pigSledPhoneNumber: '+4526234242'
+    pigSledPhoneNumber: '',
+    
+    initialize: function() {
+		Ext.Ajax.request({
+			url: BaCon.Config.dataUrl + '?action=config',
+			success: function(rs) {
+				var response = JSON.parse(rs.responseText);
+				BaCon.Config.pigSledPhoneNumber = response.pigSledPhoneNumber;
+			},
+			scope: this
+		});
+    }
     
 });
