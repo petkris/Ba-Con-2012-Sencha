@@ -4,17 +4,21 @@ Ext.define('BaCon.controller.PigSled', {
     config: {
         refs: {
         	form: 'pigSled',
-        	button: 'pigSled > button'
+        	actionButton: 'pigSled #orderWithText',
+        	actionAltButton: 'pigSled #orderWithoutText'
         },
         
         control: {
-        	button: {
-        		tap: 'onButtonTap'
+        	actionButton: {
+        		tap: 'onActionButtonTap'
+        	},
+        	actionAltButton: {
+        		tap: 'onActionAltButtonTap'
         	}
         }
     },
 
-    onButtonTap: function(button, event) {
+    onActionButtonTap: function(button, event) {
     	var values = this.getForm().getValues();
     	var text = "[" + values.location + "] " + values.order;
     	this.getForm().reset();
@@ -23,6 +27,12 @@ Ext.define('BaCon.controller.PigSled', {
     		message: 'SMS oprettet.\nHusk at sende den.',
     	});
     	var smsURI = "sms:" + BaCon.Config.pigSledPhoneNumber + "?body=" + encodeURI(text);
+    	window.location.href = smsURI;
+    },
+
+    onActionAltButtonTap: function(button, event) {
+    	this.getForm().reset();
+    	var smsURI = "sms:" + BaCon.Config.pigSledPhoneNumber;
     	window.location.href = smsURI;
     }
 

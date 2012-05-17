@@ -57,7 +57,26 @@ Ext.define('BaCon.view.PigSled', {
 		    {
 		    	xtype: 'button',
 		    	ui: 'action',
+		    	id: 'orderWithText',
 		    	text: 'Send bestilling',
+		    	iconCls: 'action',
+		    	iconMask: true,
+		    	margin: '0 10 10 10',
+		    	tabIndex: 3
+		    },
+		    {
+		    	xtype: 'panel',
+		    	html: 
+	    	        'Ovenstående bestillingen virker kun på nogle mobiler. ' +
+	    	        'Nedenstående opretter en tom SMS - bør virke på alle mobiler.',
+		    	styleHtmlContent: true,
+		    	cls: 'htmlPage'
+		    },
+		    {
+		    	xtype: 'button',
+		    	ui: 'actionAlt',
+		    	id: 'orderWithoutText',
+		    	text: 'Opret tom bestilling',
 		    	iconCls: 'action',
 		    	iconMask: true,
 		    	margin: '0 10 10 10',
