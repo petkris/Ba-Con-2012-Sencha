@@ -78,8 +78,8 @@
     "extras": [
         "resources/images",
         "resources/pages",
-        "resources/icons",
-/*        "resources/loading" */
+/*        "resources/icons",
+        "resources/loading" */
     ],
 
     /**
